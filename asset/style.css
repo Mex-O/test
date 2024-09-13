@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    background-color: #F3E5C5 !important;
+    overflow-x: hidden;
+    font-family: "Titillium Web", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+.titillium-web-regular {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: #F3E5C5 !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important; /* Change link color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: cyan !important; /* Change link color on hover */
+}
+
+nav img {
+    border-radius: 50%;
+    width: 100px;
+    border: 7px solid #764824;
+    height: 100px;
+}
+
+div h1 {
+    margin: 30px !important;
+    font-size: 4rem !important; /* Adjusted for responsiveness */
+    font-weight: 1000 !important;
+    color: #764824;
+}
+
+div h3 {
+    font-size: 2.5rem !important; /* Adjusted for responsiveness */
+    font-weight: bolder !important;
+    margin-top: 20px;
+}
+
+div .bod {
+    margin-top: 10px;
+    border: 3px dotted;
+    padding: 20px;
+    font-size: 1.5rem; /* Adjusted for responsiveness */
+}
+
+#ca {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem; /* Adjusted for responsiveness */
+}
+
+.btn {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px !important;
+    border-radius: 50px !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important; /* Adjusted for responsiveness */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: transparent !important;
+    border-color: #764824 !important;
+    color: black !important;
+    border: 0;
+}
+
+.btn-primary:hover {
+    background: #764824 !important;
+    color: white;
+}
+
+.btn-secondary {
+    background: #764824 !important;
+    border: 0;
+}
+
+.btn-secondary:hover {
+    background: transparent !important;
+    border-color: #764824 !important;
+    color: black !important;
+}
+
+.rounded {
+    height: 100px !important;
+    width: 100px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#michi h3 {
+    color: #764824;
+    font-size: 3rem !important; /* Adjusted for responsiveness */
+    font-weight: 900 !important;
+    margin-top: 10px;
+}
+
+#michi h4 {
+    margin: 5px;
+    font-size: 2rem !important; /* Adjusted for responsiveness */
+    font-weight: 700 !important;
+    color: #764824;
+}
+
+#michi h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#michi img {
+    border-radius: 50%;
+    width: 150px;
+    border: 7px solid #764824;
+    height: 150px;
+}
+
+footer h3 {
+    font-size: 1.25rem !important; /* Adjusted for responsiveness */
+    margin: 20px;
+    color: #764824;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 80px;
+        height: 80px;
+    }
+
+    div h1 {
+        font-size: 2.5rem;
+    }
+
+    div h3 {
+        font-size: 1.75rem;
+    }
+
+    .bod {
+        font-size: 1.25rem;
+    }
+
+    #ca {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    #michi h3 {
+        font-size: 2.5rem;
+    }
+
+    #michi h4 {
+        font-size: 1.5rem;
+    }
+
+    #michi img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    div h1 {
+        font-size: 1.75rem;
+    }
+
+    div h3 {
+        font-size: 1.5rem;
+    }
+
+    .bod {
+        font-size: 1rem;
+    }
+
+    #ca {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+    }
+
+    #michi h3 {
+        font-size: 2rem;
+    }
+
+    #michi h4 {
+        font-size: 1.25rem;
+    }
+
+    #michi img {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer h3 {
+        font-size: 0.875rem;
+    }
+}

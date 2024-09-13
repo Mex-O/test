@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michi Meme Maker</title>
+    <style>
+        /* Container for the entire app */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F3E5C5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .michi-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+            margin: auto;
+        }
+
+        /* Preview Area */
+        .michi-preview {
+            border: 3px solid #794C3A;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #FFF;
+            width: 400px;
+            height: 400px;
+            margin-right: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Sidebar Area */
+        .michi-sidebar {
+            background-color: #f7e8d5;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .michi-sidebar h2 {
+            font-family: 'Georgia', serif;
+            color: #794C3A;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        /* Selection Container */
+        .selection {
+            margin-bottom: 20px;
+        }
+
+        .selection h3 {
+            font-family: 'Georgia', serif;
+            color: #5F4A3A;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Image Options */
+        .image-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .image-options img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid transparent;
+        }
+
+        .image-options img.selected {
+            border: 2px solid #794C3A;
+        }
+
+        /* Responsive for small devices */
+        @media (max-width: 768px) {
+            .michi-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .michi-preview {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="michi-container">
+        <!-- Preview area -->
+        <div class="michi-preview" id="michi-preview">
+            <!-- Dynamic meme preview -->
+            <img id="preview-image" src="/images/michi.PNG" alt="Michi Preview" style="max-width: 100%; max-height: 100%;">
+        </div>
+
+        <!-- Sidebar for selecting options -->
+        <div class="michi-sidebar">
+            <h2>Create Your Michi</h2>
+
+            <!-- Cat Selection -->
+            <div class="selection">
+                <h3>Cat</h3>
+                <div class="image-options" id="cat-options">
+                    <img src="images/brown.webp" alt="Brown Cat" data-type="cat" data-image="cat_brown.png">
+                    <img src="images/cat_a.webp" alt="Green Cat" data-type="cat" data-image="cat_green.png">
+                    <img src="images/cat_black.webp" alt="Purple Cat" data-type="cat" data-image="cat_purple.png">
+                    <img src="images/cat_black.webp" alt="Black Cat" data-type="cat" data-image="cat_black.png">
+                    <img src="images/cat_white.webpp" alt="White Cat" data-type="cat" data-image="cat_white.png">
+                </div>
+            </div>
+
+            <!-- Hat Selection -->
+            <div class="selection">
+                <h3>Hat</h3>
+                <div class="image-options" id="hat-options">
+                    <img src="images/hat_alien.png" alt="Alien Hat" data-type="hat" data-image="hat_alien.png">
+                    <img src="images/hat_cowboy.png" alt="Cowboy Hat" data-type="hat" data-image="hat_cowboy.png">
+                    <img src="images/hat_viking.png" alt="Viking Hat" data-type="hat" data-image="hat_viking.png">
+                </div>
+            </div>
+
+            <!-- Face Selection -->
+            <div class="selection">
+                <h3>Face</h3>
+                <div class="image-options" id="face-options">
+                    <img src="assets/face_smile.png" alt="Smile Face" data-type="face" data-image="face_smile.png">
+                    <img src="assets/face_big_smile.png" alt="Big Smile Face" data-type="face" data-image="face_big_smile.png">
+                    <img src="assets/face_big_smile.png" alt="Big Smile Face" data-type="face" data-image="face_big_smile.png">
+                    <img src="assets/face_big_smile.png" alt="Big Smile Face" data-type="face" data-image="face_big_smile.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
